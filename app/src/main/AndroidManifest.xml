@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".base.UseCaseActivity"/>
-        <activity android:name=".usescases.corotines.usecase1.PerformSingleNetworkRequestActivity"/>
         <activity android:name=".base.BaseActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -19,7 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".usescases.corotines.usecase2.Perform2SequentialNetworkRequests" />
+        <activity android:name=".usescases.corotines.usecase1.PerformSingleNetworkRequestActivity"/>
+        <activity android:name=".usescases.corotines.usecase2.Perform2SequentialNetworkRequestsActivity" />
+        <activity android:name=".usescases.corotines.usecase3.PerformNetworkRequestConcurrentActivity" />
     </application>
 
 </manifest>

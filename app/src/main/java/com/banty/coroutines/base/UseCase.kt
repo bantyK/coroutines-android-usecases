@@ -3,7 +3,8 @@ package com.banty.coroutines.base
 import android.os.Parcelable
 import androidx.appcompat.app.AppCompatActivity
 import com.banty.coroutines.usescases.corotines.usecase1.PerformSingleNetworkRequestActivity
-import com.banty.coroutines.usescases.corotines.usecase2.Perform2SequentialNetworkRequests
+import com.banty.coroutines.usescases.corotines.usecase2.Perform2SequentialNetworkRequestsActivity
+import com.banty.coroutines.usescases.corotines.usecase3.PerformNetworkRequestConcurrentActivity
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -17,6 +18,7 @@ data class UseCaseCategory(val categoryName: String, val useCases: List<UseCase>
 
 const val useCaseDescription1 = "#1 Perform single network request"
 const val useCaseDescription2 = "#2 Perform two sequential network requests"
+const val useCaseDescription3 = "#3 Perform several network requests concurrently"
 
 private val coroutineUseCases =
     UseCaseCategory(
@@ -27,7 +29,11 @@ private val coroutineUseCases =
             ),
             UseCase(
                 useCaseDescription2,
-                Perform2SequentialNetworkRequests::class.java
+                Perform2SequentialNetworkRequestsActivity::class.java
+            ),
+            UseCase(
+                useCaseDescription3,
+                PerformNetworkRequestConcurrentActivity::class.java
             )
         )
     )

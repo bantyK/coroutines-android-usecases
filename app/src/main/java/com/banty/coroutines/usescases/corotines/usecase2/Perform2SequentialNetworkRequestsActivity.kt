@@ -12,7 +12,7 @@ import com.banty.coroutines.utils.setVisible
 import com.banty.coroutines.utils.toast
 import kotlinx.android.synthetic.main.activity_perform2sequentialnetworkrequests.*
 
-class Perform2SequentialNetworkRequests : BaseActivity() {
+class Perform2SequentialNetworkRequestsActivity : BaseActivity() {
     override fun getToolbarTitle() = useCaseDescription2
 
     private val binding by lazy {
