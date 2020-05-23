@@ -6,6 +6,7 @@ import com.banty.coroutines.usescases.corotines.usecase1.PerformSingleNetworkReq
 import com.banty.coroutines.usescases.corotines.usecase2.Perform2SequentialNetworkRequestsActivity
 import com.banty.coroutines.usescases.corotines.usecase2.callbacks.SequentialNetworkRequestCallbackActivity
 import com.banty.coroutines.usescases.corotines.usecase3.PerformNetworkRequestConcurrentActivity
+import com.banty.coroutines.usescases.corotines.usecase4.NetworkRequestWithTimeoutActivity
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -21,6 +22,7 @@ const val useCaseDescription1 = "#1 Perform single network request"
 const val useCaseDescription2 = "#2 Perform two sequential network requests"
 const val useCaseDescription3 = "#3 Perform several network requests concurrently"
 const val useCase2UsingCallbacksDescription = "#2 using Callbacks"
+const val useCaseDescription4 = "#4 network request with timeout"
 
 private val coroutineUseCases =
     UseCaseCategory(
@@ -40,6 +42,10 @@ private val coroutineUseCases =
             UseCase(
                 useCaseDescription3,
                 PerformNetworkRequestConcurrentActivity::class.java
+            ),
+            UseCase(
+                useCaseDescription4,
+                NetworkRequestWithTimeoutActivity::class.java
             )
         )
     )
