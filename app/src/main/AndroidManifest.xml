@@ -23,6 +23,7 @@
         <activity android:name=".usescases.corotines.usecase3.PerformNetworkRequestConcurrentActivity" />
         <activity android:name=".usescases.corotines.usecase2.callbacks.SequentialNetworkRequestCallbackActivity" />
         <activity android:name=".usescases.corotines.usecase4.NetworkRequestWithTimeoutActivity" />
+        <activity android:name=".usescases.corotines.usecase5.ExceptionHandlingActivity" />
     </application>
 
 </manifest>

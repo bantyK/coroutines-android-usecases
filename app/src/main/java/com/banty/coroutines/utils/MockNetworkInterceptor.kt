@@ -86,6 +86,10 @@ class MockNetworkInterceptor : Interceptor {
         mockResponses.add(mockResponse)
     }
 
+    companion object {
+        const val INTERNAL_SERVER_ERROR_HTTP_CODE = 500
+    }
+
 }
 
 
